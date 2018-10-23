@@ -42,10 +42,10 @@ myApp.controller('productsController',
 
 
             // Your document is ready, place your code here
-            $scope.products = angular.element(document.querySelector('.products-container'));
-            $scope.categories = angular.element(document.querySelector('.categories'));
-            $scope.productsWidth = $scope.products[0].offsetTop;
-            $scope.categories.css('top',  $scope.productsWidth);
+            // $scope.products = angular.element(document.querySelector('.products-container'));
+            // $scope.categories = angular.element(document.querySelector('.categories'));
+            // $scope.productsWidth = $scope.products[0].offsetTop;
+            // $scope.categories.css('top',  $scope.productsWidth);
 
 
 

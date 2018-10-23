@@ -2,12 +2,16 @@ ul, html, body{
     margin: 0;
     padding: 0;
 }
-
-h1{
+*{
+    max-height: initial !important;
+}
+.title{
     text-align: center;
+    font-size: 64px;
 }
 body{
     background: #fff;
+    height: auto !important;
 }
 .products-container{
     margin: 0 auto;
@@ -45,11 +49,13 @@ body{
 }
 .categories{
     position: fixed;
-    top: 0;
+
     right: 5px;
+
 }
-.products{
+.products, .products-container{
     margin: 0 auto;
+
 }
 
 .categories{
