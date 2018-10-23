@@ -1,0 +1,17 @@
+<div ng-controller="productsController">
+    <div class="products-container" flex="80" layout="row" flex-xs="90" flex-md="60" flex-lg="70">
+
+        <div layout="row" layout-wrap layout-align="space-between" flex="100" class="products">
+            <div ng-repeat = "item in items | filter: {brand:brand}" flex="30"  flex-xs="100"
+                 flex-sm="45" flex-md="45" class="item-box" data-category={{item.bsr_category}}>
+                <h4 class="product-name">{{item.name}}</h4>
+                <h4 class="brand">{{item.brand}}</h4>
+                <div class="product-poster">
+                    <img ng-src="{{item.img}}">
+                </div>
+                <h4 class="price">Price: {{item.price}}</h4>
+            </div>
+        </div>
+
+    </div>
+</div>
