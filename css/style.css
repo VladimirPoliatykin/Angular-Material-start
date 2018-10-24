@@ -64,10 +64,13 @@ body{
 
 }
 .categories-item{
-    margin: 10px auto;
-    font-size: 14px;
     list-style-type: none;
-    font-weight: bold;
+}
+.categories-item,.categories-link-item{
+    margin: 10px auto;
+    font-size: 12px;
     cursor: pointer;
+    text-decoration: none;
+    color: #000;
 
 }

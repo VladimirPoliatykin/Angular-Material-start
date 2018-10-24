@@ -12,43 +12,24 @@
   <h1 class="title">Products</h1>
 
   <div class="search-box" flex="60" flex-xs="90" flex-sm = "80">
-    <input type="text" name="" ng-model="brand" class="search-field">
+    <input type="text" name="" ng-model="brand" class="search-field" value="{{searchedValueFromField}}" >
   </div>
   <div class="categories"   >
 
     <ul class="categoriesList" layout="column" layout-wrap layout-xs="row" layout-sm="row" flex-xs="100" flex="20" flex-sm="100"
     flex-md="100" flex-lg="100">
       <li  flex="100" flex-xs ="20" flex-sm="20" class="categories-item">
-        <a href="#!/prods/all"> All categories</a>
+        <a href="#!all" class="categories-link-item"> All categories</a>
       </li>
       <li ng-repeat="elem in catrs" flex="100" flex-xs = "20" flex-sm="20" class="categories-item" >
-        <a ng-href="#!prods/{{elem}}" class="categories-link-item" data-category="{{elem.split(' ').join('')}}">{{elem}}</a>
+        <a ng-href="#!prods/{{elem}}/{{1}}" class="categories-link-item" data-category="{{elem.split(' ').join('')}}">{{elem}}</a>
       </li>
 
     </ul>
 
   </div>
 
-  <!--<div class="products-container" flex="80" layout="row" flex-xs="90" flex-md="60" flex-lg="70">-->
-
-    <!--<div layout="row" layout-wrap layout-align="space-between" flex="100" class="products">-->
-      <!--<div ng-repeat = "item in items.products | filter: {brand:brand}" flex="30"  flex-xs="100"-->
-           <!--flex-sm="45" flex-md="45" class="item-box" data-category={{item.bsr_category}}>-->
-        <!--<h4 class="product-name">{{item.name}}</h4>-->
-        <!--<h4 class="brand">{{item.brand}}</h4>-->
-        <!--<div class="product-poster">-->
-          <!--<img src="{{item.img}}">-->
-        <!--</div>-->
-        <!--<h4 class="price">Price: {{item.price}}</h4>-->
-      <!--</div>-->
-    <!--</div>-->
-
-
-
-
-  <!--</div>-->
-
-
+  
 
   <ng-view>
 
